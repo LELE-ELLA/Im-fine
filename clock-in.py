@@ -113,10 +113,10 @@ class ClockIn(object):
         new_info['szgjcs'] = ""
         
         # add in 2022.07.08
-        new_info['sfymqjczrj'] = 2  
-        new_info['ismoved'] = 4
-        new_info['internship'] = 3
-        new_info['sfcxzysx'] = 2
+        new_info['sfymqjczrj'] = 2  #同住人员是否发热
+        new_info['ismoved'] = 4     #是否有离开
+        new_info['internship'] = 3  #是否进行实习
+        new_info['sfcxzysx'] = 2    #是否涉及疫情管控
         
    #     new_info['verifyCode'] = captcha
         # 2021.08.05 Fix 2
