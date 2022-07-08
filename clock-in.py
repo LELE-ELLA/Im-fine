@@ -113,10 +113,10 @@ class ClockIn(object):
         new_info['szgjcs'] = ""
         
         # add in 2022.07.08
-        new_info['sfymqjczrj'] = ""
-        new_info['ismoved'] = ""
-        new_info['internship'] = ""
-        new_info['sfcxzysx'] = ""
+        new_info['sfymqjczrj'] = 2  
+        new_info['ismoved'] = 4
+        new_info['internship'] = 3
+        new_info['sfcxzysx'] = 2
         
    #     new_info['verifyCode'] = captcha
         # 2021.08.05 Fix 2
@@ -192,7 +192,7 @@ def main(username, password):
                 pass
             else:
                 count = 0
-                while (str(res['e']) != '0' and count < 10):
+                while (str(res['e']) != '0' and count < 3):
                     time.sleep(5)
                     dk.get_info()
                     res = dk.post()
